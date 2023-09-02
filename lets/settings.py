@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-bd52-=g@*rd^3oh6jl#a^obejvjyg6znnrs7d^69y4xk^(r@d#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'edu',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
