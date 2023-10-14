@@ -3,6 +3,17 @@
     <img src="https://i.namu.wiki/i/DlENEaPlUpTU7_ab04rRGqS4bhvWDb5wFt5-Ip1KYyk4AYJ3qiRqOa3Tv4Vp4x7ti4zk3A5z3KZ0yKUjgAyZXw.svg"width="70px"/>
     <h2>donghyun0829</h2>
     <p><button>프로필 편집</button></p>
+    <p><button><a href="{% url 'edu:new_content'%}">새글등록</a></button></p>
+    <p>
+        <ul>
+            {% for f in feed_list %}
+            <li>
+            {{ f.content }}
+            <img src="/media/{{ f.photo}}"/>
+            </li>
+            {% endfor %}
+        </ul>
+    </p>
     <p><img src="/static/edu/image/profile.jpg"></p>
     <strong>김동현</strong>
     <p><a href="https://fifaonline4.nexon.com/main/index"target="_blank">피파</a></p>
