@@ -24,9 +24,20 @@ class NewContent(View):
         
     
     def post(self, request):
+        age = request.POST.get('age','0')
+        print(f'나이:{age}')
+        age = int(age)
+
+        pwd = request.POST.get('pwd','')
+        print(f'비밀번호:{pwd}')
+
+        tel = request.POST.get('phone','')
+        print(f'전화번호:{tel}')
+
         param = request.POST.get('content','')
         param2 = request.FILES.get('up_photo', False)
-        print(param)
+        print(f'내용:{param}')
+        
         feed = Feed(content = param, photo = param2)
         feed.save()
 
