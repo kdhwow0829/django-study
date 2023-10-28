@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>nufyn 회사 설문조사</h1>
+
+    <p>
+        <label for = "name_input">이름:</label>
+        <input type = "text" name = "name" id = "name_input" placeholder = "이름을 반드시 입력해주세요."
+            size="30"/>
+    </p>
+    <p>
+        <label for = "ad_input">주소:</label>
+        <input type = "text" name = "ad" id = "ad_input" placeholder = "대구 달서구..."/>
+    </p>
+    <p>
+        <label for = "cp_input">회사:</label>
+        <input type = "text" name = "cp" id = "cp_input" value = "nufyn 회사" disabled/>
+    </p>
+    <p>
+        <label for = "s_input">성별:</label>
+        <input type = "radio" name = "radio1"/>남
+        <input type = "radio" name = "radio1"/>여
+    </p>
+        <label for = "num_input">전화번호 앞자리:</label>
+        <input type = "radio" name = "radio2"/>010
+        <input type = "radio" name = "radio2"/>기타
+    <p>
+        <label for = "p_input">좋아하는 애완 동물은?:</label>
+        <input type = "checkbox">개</input>
+        <input type = "checkbox">고양이</input>
+        <input type = "checkbox">뱀</input>
+        <input type = "checkbox">개미</input>
+    </p>
+    <p>
+        <label for = "id_input">ID:</label>
+        <input type = "text" name = "id" id = "id_input" placeholder = "아이디"/>
+    </p>
+    <p>
+        <label for = "pw_input">PW:</label>
+        <input type = "password" name = "pw" id = "pw_input" placeholder = "패스워드"/>
+    </p>
+    <p>
+        <select>
+            <option value = "1">010</option>
+            <option value = "2">016</option>
+            <option value = "3">017</option>
+        </select>
+    </p>
+    <p>
+        <textarea cols = "50" rows = "30" placeholder ="Memo"></textarea>
+    </p>
+{% endblock content%}

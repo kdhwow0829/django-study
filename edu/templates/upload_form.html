@@ -33,5 +33,35 @@
             <label for = "birth_input">생일선택:</label>
             <input type = "date" name = "birth" id = "birth_input"/>
         </p>
+        <p>
+            <input type = "checkbox">아침을 드셨나요?</input>
+            <input type = "checkbox">점심을 드셨나요?</input>
+            <input type = "checkbox"checked>저녁을 드셨나요?</input>
+        </p>
+        <p>
+            <input type = "radio" name = "radio1" checked/>한식
+            <input type = "radio" name = "radio1"/>양식
+            <input type = "radio" name = "radio1"/>중식
+            <input type = "radio" name = "radio1"/>일식
+        </p>
+        <p>
+            <input type = "radio" name = "radio2" checked/>매운 것
+            <input type = "radio" name = "radio2"/>안 매운 것
+        </p>
+        <p>
+            <input type = "radio" name = "radio3" checked/>뜨거운 것
+            <input type = "radio" name = "radio3"/>차가운 것
+        </p>
+        <P>
+            <textarea cols = "50" rows = "10"></textarea>
+        </p>
+        <p>
+            <select>
+                <option value = "1">피자</option>
+                <option value = "2">치킨</option>
+                <option value = "3">햄버거</option>
+                <option value = "4">짜장면</option>
+            </select>
+        </p>
     </form>
 {% endblock content %}
